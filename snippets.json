@@ -14,7 +14,7 @@
 		"body": [
 			"import React from 'react';\n\nexport const ${1:${TM_FILENAME_BASE}} = ({${2:${props}}}) => {\n  return(\n\t<${3:${tag}}>\n\t  ${4:${somethingBebra}}\n\t</${5:${tag}}>)\n};",
 		],
-		"description": "deploy functional component in js"
+		"description": "unwrap functional component in js"
 	},
 	"functional component ts": {
 		"scope": "typescript, typescriptreact",
@@ -22,7 +22,7 @@
 		"body": [
 			"import React, { FC } from 'react';\n\ninterface {\n${1:${props}}: ${2:${Type}}\n}\nexport const ${3:${TM_FILENAME_BASE}}: FC<${2:${Type}}> = ({${1:${props}}}) => {\n  return(\n\t<${6:${tag}}>\n\t  ${3:${TM_FILENAME_BASE}}\n\t</${6:${tag}}>)\n};",
 		],
-		"description": "unwrap functional component"
+		"description": "unwrap functional component in ts"
 	},
 	"useEffectHook": {
 		"scope": "javascript, javascriptreact, typescript, typescriptreact",
