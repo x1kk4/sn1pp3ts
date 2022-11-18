@@ -28,14 +28,14 @@ The `⇥` means the `TAB` key.
   <td>   
 
 ```jsx
-console.log("")
+console.log(`first`)
 ```
 
   </td>
   <td>   
 
 ```tsx
-console.log("")
+console.log(`first`)
 ```
 
   </td>
@@ -50,11 +50,11 @@ console.log("")
 ```jsx
 import React from 'react';
 
-export const Bebra = ({props}) => {
+export const `first` = ({`second`}) => {
   return(
-    <tag>
-      something
-    </tag>)
+    <`third`>
+      `first`
+    </`third`>)
 };
 ```
 
@@ -65,13 +65,13 @@ export const Bebra = ({props}) => {
 import React, { FC } from 'react';
 
 interface {
-props: Type
+`first`: `second`
 }
-export const Bebra: FC<Type> = ({props}) => {
+export const `third`: FC<second> = ({`first`}) => {
   return(
-    <tag>
-      Bebra
-    </tag>)
+    <`tag`>
+      `third`
+    </`tag`>)
 };
 ```
 
@@ -85,14 +85,14 @@ export const Bebra: FC<Type> = ({props}) => {
   <td>   
 
 ```jsx
-const [first, setfirst] = useState(second)
+const [`first`, set`First`] = useState(`second`)
 ```
 
   </td>
   <td>   
 
 ```tsx
-const [first, setfirst] = useState(second)
+const [`first`, set`First`] = useState(`second`)
 ```
 
   </td>
