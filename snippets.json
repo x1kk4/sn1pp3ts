@@ -1,67 +1,76 @@
 {
-	"console.log()": {
-		"scope": "javascript, typescript, javascriptreact, typescriptreact",
-		"prefix": "clg",
-		"body": [
-			"console.log(\"$1\")",
-			"$2"
-		],
-		"description": "Log output to console"
-	},
-	"functional component js": {
-		"scope": "javascript, javascriptreact",
-		"prefix": "fc",
-		"body": [
-			"import React from 'react';\n\nexport const ${1:${TM_FILENAME_BASE}} = ({${2:${props}}}) => {\n  return(\n\t<${3:${tag}}>\n\t  ${4:${somethingBebra}}\n\t</${5:${tag}}>)\n};",
-		],
-		"description": "unwrap functional component in js"
-	},
-	"functional component ts": {
-		"scope": "typescript, typescriptreact",
-		"prefix": "fc",
-		"body": [
-			"import React, { FC } from 'react';\n\ninterface {\n${1:${props}}: ${2:${Type}}\n}\nexport const ${3:${TM_FILENAME_BASE}}: FC<${2:${Type}}> = ({${1:${props}}}) => {\n  return(\n\t<${6:${tag}}>\n\t  ${3:${TM_FILENAME_BASE}}\n\t</${6:${tag}}>)\n};",
-		],
-		"description": "unwrap functional component in ts"
-	},
-	"useEffectHook": {
-		"scope": "javascript, javascriptreact, typescript, typescriptreact",
-		"prefix": "ue",
-		"body": "useEffect(() => {\n${1:${something}}\n}, [${2:${dependencies}}]);",
-		"description": "unwrap useEffect hook"
-	},
-	"useStateHook": {
-		"scope": "javascript, javascriptreact, typescript, typescriptreact",
-		"prefix": "us",
-		"body": "const [${1:first}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:second})",
-		"description": "unwrap useState hook"
-	},
-	"exportType": {
-		"scope": "typescript,typescriptreact,javascript,javascriptreact",
-		"prefix": "et",
-		"body": ["export type ${1:first} = {${2:second}}"],
-		"description": "export type"
-		
-	},
-	"useCallback": {
-		"scope": "typescript,typescriptreact,javascript,javascriptreact",
-		"prefix": "ucall",
-		"body": [
-		  "useCallback(",
-		  "  () => {",
-		  "    ${1:first}",
-		  "  },",
-		  "  [${2:second}],",
-		  ")",
-		  ""
-		],
-		"description": "unwrap useCallback hook"
-	  },
-	  
-	  "useContext": {
-		"scope": "typescript,typescriptreact,javascript,javascriptreact",
-		"prefix": "ucont",
-		"body": ["const ${1:first} = useContext(${2:second})"],
-		"description": "unwrap useContext hook"
-	  },
+  "console.log()": {
+    "scope": "javascript, typescript, javascriptreact, typescriptreact",
+    "prefix": "clg",
+    "body": ["console.log($1)", "$2"],
+    "description": "Log output to console"
+  },
+  "import": {
+    "prefix": "imp",
+    "body": ["import ${2:second} from '${1:first}'"],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  },
+  "functional component js": {
+    "scope": "javascript, javascriptreact",
+    "prefix": "fc",
+    "body": [
+      "import React from 'react';\n\nexport const ${1:${TM_FILENAME_BASE}} = ({${2:${props}}}) => {\n  return(\n\t<${3:${tag}}>\n\t  ${4:${somethingBebra}}\n\t</${5:${tag}}>)\n};"
+    ],
+    "description": "deploy functional component in js"
+  },
+  "functional component ts": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "fc",
+    "body": [
+      "import React, { FC } from 'react';\n\ninterface {\n${1:${props}}: ${2:${Type}}\n}\nexport const ${3:${TM_FILENAME_BASE}}: FC<${2:${Type}}> = ({${1:${props}}}) => {\n  return(\n\t<${6:${tag}}>\n\t  ${3:${TM_FILENAME_BASE}}\n\t</${6:${tag}}>)\n};"
+    ],
+    "description": "unwrap functional component"
+  },
+  "simple functional component ts": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "sfc",
+    "body": [
+      "import React, { FC } from 'react';\n\nexport const ${1:${TM_FILENAME_BASE}}: FC = ({${2:${props}}}) => {\n  return(\n\t<${3:${tag}}>\n\t  ${1:${TM_FILENAME_BASE}}\n\t</${3:${tag}}>)\n};"
+    ],
+    "description": "unwrap simple ts functional component"
+  },
+  "useEffectHook": {
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "prefix": "ue",
+    "body": "useEffect(() => {\n${1:${something}}\n}, [${2:${dependencies}}]);",
+    "description": "unwrap useEffect hook"
+  },
+  "useStateHook": {
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "prefix": "us",
+    "body": "const [${1:first}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:second})",
+    "description": "unwrap useState hook"
+  },
+  "exportType": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": "et",
+    "body": ["export type ${1:first} = {${2:second}}"],
+    "description": "export type"
+  },
+  "useCallback": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": "ucall",
+    "body": [
+      "useCallback(",
+      "  () => {",
+      "    ${1:first}",
+      "  },",
+      "  [${2:second}],",
+      ")",
+      ""
+    ],
+    "description": "unwrap useCallback hook"
+  },
+
+  "useContext": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": "ucont",
+    "body": ["const ${1:first} = useContext(${2:second})"],
+    "description": "unwrap useContext hook"
+  }
 }
