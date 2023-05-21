@@ -54,8 +54,6 @@ console.${1}(${2})
 <tbody>
 
 
-
-
 <tbody>
 <tr>
   <td><code>imp⇥</code></td>
@@ -83,8 +81,7 @@ import ${1} from `${2}`
 <tbody>
 
 
-
-
+<tbody>
 <tr>
   <td><code>arr⇥</code></td>
 
@@ -106,9 +103,11 @@ const ${1} = (${2}) => {${3}}
 
 </tr>
 </tr>
+</thead>
+<tbody>
 
 
-
+<tbody>
 <tr>
   <td><code>efc⇥</code></td>
   <td>
@@ -140,10 +139,11 @@ export const ${1} = () => {
 
   </td>
 </tr>
+</thead>
+<tbody>
 
 
-
-
+<tbody>
 <tr>
   <td><code>edfc⇥</code></td>
   <td>
@@ -179,10 +179,11 @@ export default ${1}
 
   </td>
 </tr>
+</thead>
+<tbody>
 
 
-
-
+<tbody>
 <tr>
   <td><code>edtfc⇥</code></td>
   <td>
@@ -212,9 +213,11 @@ export default ${1}
 
   </td>
 </tr>
+</thead>
+<tbody>
 
 
-
+<tbody>
 <tr>
   <td><code>us⇥</code></td>
   <td>
@@ -233,9 +236,11 @@ const [${1}, set${1}] = useState(${2})
 
   </td>
 </tr>
+</thead>
+<tbody>
 
 
-
+<tbody>
 <tr>
   <td><code>ue⇥</code></td>
   <td>
@@ -257,9 +262,11 @@ useEffect(() => {
 
   </td>
 </tr>
+</thead>
+<tbody>
 
 
-
+<tbody>
 <tr>
   <td><code>t⇥</code></td>
   <td>
@@ -277,9 +284,11 @@ type ${1} = {${2}}
 
   </td>
 </tr>
+</thead>
+<tbody>
 
 
-
+<tbody>
 <tr>
   <td><code>et⇥</code></td>
   <td>
@@ -297,9 +306,11 @@ export type ${1} = {${2}}
 
   </td>
 </tr>
+</thead>
+<tbody>
 
 
-
+<tbody>
 <tr>
   <td><code><⇥</code></td>
   <td>
@@ -317,9 +328,11 @@ export type ${1} = {${2}}
 
   </td>
 </tr>
+</thead>
+<tbody>
 
 
-
+<tbody>
 <tr>
   <td><code>cn⇥</code></td>
   <td>
@@ -337,3 +350,5 @@ className={`${${1}}`}
 
   </td>
 </tr>
+</thead>
+<tbody>
