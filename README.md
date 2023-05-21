@@ -1,7 +1,41 @@
 <h1>My personal snippet-pack</h1>
 
-The `⇥` means the `TAB` key.
+<h2>Installation:</h2>
 
+  ```bash
+git clone git@github.com:x1kk4/react-snippets.git snippets
+  ```
+
+
+  ```bash
+cd snippets
+  ```
+
+<br>
+
+<h3>Linux:</h3>
+
+  ```bash
+cp x1kk4-snippets.code-snippets ~/.config/Code/User/snippets/
+  ```
+
+In VSCode: <code>ctrl + shift + P</code> -> Snippets: Configure User Snippets -> choose x1kk4-snippets.code-snippets
+
+<br>
+
+<h3>MacOS:</h3>
+
+  ```bash
+cp x1kk4-snippets.code-snippets ~/Library/Application\ Support/Code/User/snippets/
+  ```
+
+In VSCode: <code>cmd + shift + P</code> -> Snippets: Configure User Snippets -> choose x1kk4-snippets.code-snippets
+
+
+<br>
+<br>
+
+<h2>Usage:</h2>
 <table>
 <thead>
 <tr>
