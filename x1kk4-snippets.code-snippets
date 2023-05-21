@@ -1,0 +1,114 @@
+{
+  "console.log": {
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "prefix": "log",
+    "body": ["console.${1|log,info,error,table,dir|}($2)", "$3"],
+    "description": "Log output to console"
+  },
+
+  "import": {
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "prefix": "imp",
+    "body": ["import ${1} from \"${2}\""],
+    "description": "Import module"
+  },
+
+  "arrow function": {
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "prefix": "arr",
+    "body": ["const ${1} = (${2}) => {${3}}"],
+    "description": "Expands the arrow function"
+  },
+
+  "export functional component js": {
+    "scope": "javascript, javascriptreact",
+    "prefix": "efc",
+    "body": ["export const ${1} = () => {\n\treturn (\n\t\t<${3}>\n\t\t\t<p>${1}</p>\n\t\t</${3}>\n\t)\n}"],
+    "description": "Expands the exported functional component"
+  },
+
+  "export functional component ts": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "efc",
+    "body": [
+      "import { FC } from \"react\"\n\nexport const ${1}: FC = () => {\n\treturn (\n\t  <${2}>\n\t\t\t<p>${1}</p>\n\t  </${2}>\n\t)\n}"
+    ],
+    "description": "Expands the exported functional component"
+  },
+
+  "export default functional component js": {
+    "scope": "javascript, javascriptreact",
+    "prefix": "edfc",
+    "body": [
+      "const ${1} = () => {\n\treturn (\n\t\t<${2}>\n\t\t\t<p>${1}</p>\n\t\t</${2}>\n\t)\n}\n\nexport default ${1}"
+    ],
+    "description": "Expands the functional component exported by default"
+  },
+
+  "export default functional component ts": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "edfc",
+    "body": [
+      "import { FC } from \"react\"\n\nconst ${1}: FC = () => {\n\treturn (\n\t\t<${2}>\n\t\t\t<p>${1}</p>\n\t\t</${2}>\n\t)\n}\n\nexport default ${1}"
+    ],
+    "description": "Expands the functional component exported by default"
+  },
+
+  "export default typed functional component": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "edtfc",
+    "body": [
+      "import { FC } from \"react\"\n\ninterface ${1}Props {${3}}\n\nconst ${1}: FC<${1}Props> = ({${4}}) => {\n\treturn (\n\t\t<${2}>\n\t\t\t<p>${1}</p>\n\t\t</${2}>\n\t)\n}\n\nexport default ${1}"
+    ],
+    "description": "Expands the typed functional component exported by default"
+  },
+
+  "useEffectHook": {
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "prefix": "ue",
+    "body": "use${1}Effect(() => {\n\t${2}\n}, [${3}])",
+    "description": "Expands the useEffect hook"
+  },
+
+  "useStateHook js": {
+    "scope": "javascript, javascriptreact",
+    "prefix": "us",
+    "body": "const [${1}, set${1/(.*)/${1:/capitalize}/}] = use${3}State(${2})",
+    "description": "Expands the useState hook"
+  },
+
+  "useStateHook ts": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "us",
+    "body": "const [${1}, set${1/(.*)/${1:/capitalize}/}] = use${4}State<${2}>(${3})",
+    "description": "Expands typed useState hook"
+  },
+
+  "typeDefinition": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "t",
+    "body": ["type ${1} = {${2}}"],
+    "description": "Type declaration"
+  },
+
+  "exportType": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "et",
+    "body": ["export type ${1} = {${2}}"],
+    "description": "Export type declaration"
+  },
+
+  "generic": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "<",
+    "body": ["<${1}>"],
+    "description": "Generic"
+  },
+
+  "className": {
+    "scope": "typescript, typescriptreact, javascript, javascriptreact",
+    "prefix": "cn",
+    "body": ["className={`${$1}`}"],
+    "description": "className"
+  }
+}
