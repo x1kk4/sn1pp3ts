@@ -1,4 +1,4 @@
-<h1>My snippets</h1>
+<h1>My personal snippet-pack</h1>
 
 The `⇥` means the `TAB` key.
 
@@ -7,187 +7,325 @@ The `⇥` means the `TAB` key.
 <tr>
   <th>
 
-**trigger**
+**Trigger**
 
   </th>
+
+  <th>
+  
+  **TypeScript**
+
+  </th>
+  
+  
   <th>
 
-**snippet(JS)**
+**JavaScript**
 
   </th>
-  <th>
 
-**snippet(TS)**
-
-  </th>
 </tr>
+
 </thead>
-<tbody>
+
+
 <tr>
-  <td><code>clg⇥</code></td>
+  <td><code>log⇥</code></td>
+
   <td>   
+  
+```tsx
+console.${1}(${2})
+```
+
+  </td>
+
+  <td>
 
 ```jsx
-console.log(`first`)
+console.${1}(${2})
 ```
-
+  
   </td>
-  <td>   
 
-```tsx
-console.log(`first`)
-```
+</tr>
 
-  </td>
-</tr>
-</tr>
-</thead>
-<tbody>
+
+
+
+
 <tr>
-  <td><code>fc⇥</code></td>
+  <td><code>imp⇥</code></td>
+
   <td>   
+  
+```tsx
+import ${1} from `${2}`
+```
+
+  </td>
+
+  <td>
 
 ```jsx
-import React from 'react';
+import ${1} from `${2}`
+```
+  
+  </td>
 
-export const `first` = ({`second`}) => {
-  return(
-    <`third`>
-      `first`
-    </`third`>)
-};
+</tr>
+
+
+
+
+
+<tr>
+  <td><code>arr⇥</code></td>
+
+  <td>   
+  
+```tsx
+const ${1} = (${2}) => {${3}}
 ```
 
   </td>
-  <td>   
+
+  <td>
+
+```jsx
+const ${1} = (${2}) => {${3}}
+```
+  
+  </td>
+
+</tr>
+
+
+
+<tr>
+  <td><code>efc⇥</code></td>
+  <td>
 
 ```tsx
-import React, { FC } from 'react';
+import { FC } from "react"
 
-interface {
-`first`: `second`
+export const ${1}: FC = () => {
+  return (
+    <${2}>
+      <p>${1}</p>
+    </${2}>
+  )
 }
-export const `third`: FC<second> = ({`first`}) => {
-  return(
-    <`tag`>
-      `third`
-    </`tag`>)
-};
 ```
 
   </td>
-</tr>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><code>us⇥</code></td>
-  <td>   
+  <td>
 
 ```jsx
-const [`first`, set`First`] = useState(`second`)
+export const ${1} = () => {
+  return (
+    <${2}>
+      <p>${1}</p>
+    </${2}>
+  )
+}
 ```
 
   </td>
-  <td>   
+</tr>
+
+
+
+
+<tr>
+  <td><code>edfc⇥</code></td>
+  <td>
 
 ```tsx
-const [`first`, set`First`] = useState(`second`)
+import { FC } from "react"
+
+const ${1}: FC = () => {
+  return (
+    <${2}>
+      <p>${1}</p>
+    </${2}>
+  )
+}
+
+export default ${1}
 ```
 
   </td>
-</tr>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><code>ue⇥</code></td>
-  <td>   
+  <td>
 
 ```jsx
-useEffect(() => {
-something
-}, [dependencies]);
+const ${1} = () => {
+  return (
+    <${2}>
+      <p>${1}</p>
+    </${2}>
+  )
+}
+
+export default ${1}
 ```
 
   </td>
-  <td>   
+</tr>
+
+
+
+
+<tr>
+  <td><code>edtfc⇥</code></td>
+  <td>
 
 ```tsx
-useEffect(() => {
-something
-}, [dependencies]);
+import { FC } from "react"
+
+interface ${1}Props {${3}}
+
+const ${1}: FC<${1}Props> = ({${4}}) => {
+  return (
+    <${2}>
+      <p>${1}</p>
+    </${2}>
+  )
+}
+
+export default ${1}
 ```
 
   </td>
-</tr>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><code>ucall⇥</code></td>
-  <td>   
-
-```jsx
-useCallback(
-  () => {
-    first
-  },
-  [second],
-)
-```
-
-  </td>
-  <td>   
-
-```tsx
-useCallback(
-  () => {
-    first
-  },
-  [second],
-)
-```
-
-  </td>
-</tr>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><code>ucont⇥</code></td>
-  <td>   
-
-```jsx
-const first = useContext(second)
-```
-
-  </td>
-  <td>   
-
-```tsx
-const first = useContext(second)
-```
-
-  </td>
-</tr>
-</tr>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><code>et⇥</code></td>
-  <td>   
+  <td>
 
 ```jsx
 /╲/\╭༼ ººل͟ºº ༽╮/\╱\
 ```
 
   </td>
-  <td>   
+</tr>
+
+
+
+<tr>
+  <td><code>us⇥</code></td>
+  <td>
 
 ```tsx
-export type first = {second}
+const [${1}, set${1}] = useState<${2}>(${3})
+```
+
+  </td>
+  <td>
+
+
+```jsx
+const [${1}, set${1}] = useState(${2})
+```
+
+  </td>
+</tr>
+
+
+
+<tr>
+  <td><code>ue⇥</code></td>
+  <td>
+
+```tsx
+useEffect(() => {
+  ${2}
+}, [${3}])
+```
+
+  </td>
+  <td>
+
+```jsx
+useEffect(() => {
+  ${2}
+}, [${3}])
+```
+
+  </td>
+</tr>
+
+
+
+<tr>
+  <td><code>t⇥</code></td>
+  <td>
+
+```tsx
+type ${1} = {${2}}
+```
+
+  </td>
+  <td>
+
+```jsx
+/╲/\╭༼ ººل͟ºº ༽╮/\╱\
+```
+
+  </td>
+</tr>
+
+
+
+<tr>
+  <td><code>et⇥</code></td>
+  <td>
+
+```tsx
+export type ${1} = {${2}}
+```
+
+  </td>
+  <td>
+
+```jsx
+/╲/\╭༼ ººل͟ºº ༽╮/\╱\
+```
+
+  </td>
+</tr>
+
+
+
+<tr>
+  <td><code><⇥</code></td>
+  <td>
+
+```tsx
+<${1}>
+```
+
+  </td>
+  <td>
+
+```jsx
+/╲/\╭༼ ººل͟ºº ༽╮/\╱\
+```
+
+  </td>
+</tr>
+
+
+
+<tr>
+  <td><code>cn⇥</code></td>
+  <td>
+
+```tsx
+className={`${${1}}`}
+```
+
+  </td>
+  <td>
+
+```jsx
+className={`${${1}}`}
 ```
 
   </td>
