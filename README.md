@@ -28,7 +28,7 @@ The `⇥` means the `TAB` key.
 
 </thead>
 
-
+<tbody>
 <tr>
   <td><code>log⇥</code></td>
 
@@ -50,11 +50,13 @@ console.${1}(${2})
 
 </tr>
 </tr>
+</thead>
+<tbody>
 
 
 
 
-
+<tbody>
 <tr>
   <td><code>imp⇥</code></td>
 
@@ -74,9 +76,11 @@ import ${1} from `${2}`
   
   </td>
 
-</tr>
-</tr>
 
+</tr>
+</tr>
+</thead>
+<tbody>
 
 
 
