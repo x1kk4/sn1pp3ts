@@ -110,5 +110,31 @@
     "prefix": "cn",
     "body": ["className={`${$1}`}"],
     "description": "className"
+  },
+
+  "nextServerComponent": {
+    "scope": "typescript, typescriptreact, javascript, javascriptreact",
+    "prefix": "nsc",
+    "body": [
+      "const ${1} = async () => {",
+      "  return (",
+      "    <${2}>",
+      "      <p>${1}</p>",
+      "    </${2}>",
+      "  )",
+      "}",
+      "",
+      "export default ${1}"
+    ],
+    "description": "Next server component"
+  },
+
+  "nextClientComponent": {
+    "scope": "typescript, typescriptreact, javascript, javascriptreact",
+    "prefix": "ncc",
+    "body": [
+      "'use client'\n\nimport { FC } from \"react\"\n\nconst ${1}: FC = () => {\n\treturn (\n\t\t<${2}>\n\t\t\t<p>${1}</p>\n\t\t</${2}>\n\t)\n}\n\nexport default ${1}"
+    ],
+    "description": "Next client component"
   }
 }
