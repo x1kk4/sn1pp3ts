@@ -1,151 +1,64 @@
-<h1>My personal snippet-pack</h1>
+# Just my VScode snippets 
 
-<h2>Installation:</h2>
+## Installation:
 
-  ```bash
+```bash
 git clone git@github.com:x1kk4/react-snippets.git snippets
-  ```
+```
 
-
-  ```bash
+```bash
 cd snippets
-  ```
+```
 
-<br>
-
-<h3>Linux:</h3>
-
-  ```bash
+### Linux:
+```bash
 cp x1kk4-snippets.code-snippets ~/.config/Code/User/snippets/
-  ```
+```
 
-In VSCode: <code>ctrl + shift + P</code> -> Snippets: Configure User Snippets -> choose x1kk4-snippets.code-snippets
+In VSCode: `ctrl + shift + P` -> Snippets: Configure User Snippets -> choose x1kk4-snippets.code-snippets
 
-<br>
-
-<h3>MacOS:</h3>
-
-  ```bash
+### MacOS:
+```bash
 cp x1kk4-snippets.code-snippets ~/Library/Application\ Support/Code/User/snippets/
-  ```
+```
 
-In VSCode: <code>cmd + shift + P</code> -> Snippets: Configure User Snippets -> choose x1kk4-snippets.code-snippets
+In VSCode: `cmd + shift + P` -> Snippets: Configure User Snippets -> choose x1kk4-snippets.code-snippets
+## General:
+| **Trigger** |          **Output**           |
+|:-----------:|:-----------------------------:|
+|   `log⇥`    |            console            |
+|   `imp⇥`    |            import             |
+|   `arr⇥`    |          arrow func           |
+|   `efc⇥`    |     export func component     |
+|   `edfc⇥`   | export default func component |
+|  `edtfc⇥`   |    ed typed func component    |
+|    `us⇥`    |           useState            |
+|    `ue⇥`    |           useEffect           |
+|    `t⇥`     |             type              |
+|    `et⇥`    |          export type          |
+|    `<⇥`     |            generic            |
+|    `cn⇥`    |           className           |
+|   `nsc⇥`    |     next server component     |
+|   `ncc⇥`    |     next client component     | 
 
-
-<br>
-<br>
-
-<h2>Usage:</h2>
-<table>
-<thead>
-<tr>
-  <th>
-
-**Trigger**
-
-  </th>
-
-  <th>
-  
-  **TypeScript**
-
-  </th>
-  
-  
-  <th>
-
-**JavaScript**
-
-  </th>
-
-</tr>
-
-</thead>
-
-<tbody>
-<tr>
-  <td><code>log⇥</code></td>
-
-  <td>   
-  
+## Examples:
+---
+`log⇥`
 ```tsx
 console.${1}(${2})
 ```
-
-  </td>
-
-  <td>
-
-```jsx
-console.${1}(${2})
-```
-  
-  </td>
-
-</tr>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>imp⇥</code></td>
-
-  <td>   
-  
+---
+`imp⇥`
 ```tsx
 import ${1} from `${2}`
 ```
-
-  </td>
-
-  <td>
-
-```jsx
-import ${1} from `${2}`
-```
-  
-  </td>
-
-
-</tr>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>arr⇥</code></td>
-
-  <td>   
-  
+---
+`arr⇥`
 ```tsx
 const ${1} = (${2}) => {${3}}
 ```
-
-  </td>
-
-  <td>
-
-```jsx
-const ${1} = (${2}) => {${3}}
-```
-  
-  </td>
-
-</tr>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>efc⇥</code></td>
-  <td>
-
+---
+`efc⇥`
 ```tsx
 import { FC } from "react"
 
@@ -157,31 +70,8 @@ export const ${1}: FC = () => {
   )
 }
 ```
-
-  </td>
-  <td>
-
-```jsx
-export const ${1} = () => {
-  return (
-    <${2}>
-      <p>${1}</p>
-    </${2}>
-  )
-}
-```
-
-  </td>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>edfc⇥</code></td>
-  <td>
-
+---
+`edfc⇥`
 ```tsx
 import { FC } from "react"
 
@@ -195,33 +85,8 @@ const ${1}: FC = () => {
 
 export default ${1}
 ```
-
-  </td>
-  <td>
-
-```jsx
-const ${1} = () => {
-  return (
-    <${2}>
-      <p>${1}</p>
-    </${2}>
-  )
-}
-
-export default ${1}
-```
-
-  </td>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>edtfc⇥</code></td>
-  <td>
-
+---
+`edtfc⇥`
 ```tsx
 import { FC } from "react"
 
@@ -237,152 +102,65 @@ const ${1}: FC<${1}Props> = ({${4}}) => {
 
 export default ${1}
 ```
-
-  </td>
-  <td>
-
-```jsx
-/╲/\╭༼ ººل͟ºº ༽╮/\╱\
-```
-
-  </td>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>us⇥</code></td>
-  <td>
-
+---
+`us⇥`
 ```tsx
 const [${1}, set${1}] = useState<${2}>(${3})
 ```
-
-  </td>
-  <td>
-
-
-```jsx
-const [${1}, set${1}] = useState(${2})
-```
-
-  </td>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>ue⇥</code></td>
-  <td>
-
+---
+`ue⇥`
 ```tsx
 useEffect(() => {
   ${2}
 }, [${3}])
 ```
-
-  </td>
-  <td>
-
-```jsx
-useEffect(() => {
-  ${2}
-}, [${3}])
-```
-
-  </td>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>t⇥</code></td>
-  <td>
-
+---
+`t⇥`
 ```tsx
 type ${1} = {${2}}
 ```
-
-  </td>
-  <td>
-
-```jsx
-/╲/\╭༼ ººل͟ºº ༽╮/\╱\
-```
-
-  </td>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>et⇥</code></td>
-  <td>
-
+---
+`et⇥`
 ```tsx
 export type ${1} = {${2}}
 ```
-
-  </td>
-  <td>
-
-```jsx
-/╲/\╭༼ ººل͟ºº ༽╮/\╱\
-```
-
-  </td>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code><⇥</code></td>
-  <td>
-
+---
+`<⇥`
 ```tsx
 <${1}>
 ```
-
-  </td>
-  <td>
-
-```jsx
-/╲/\╭༼ ººل͟ºº ༽╮/\╱\
-```
-
-  </td>
-</tr>
-</thead>
-<tbody>
-
-
-<tbody>
-<tr>
-  <td><code>cn⇥</code></td>
-  <td>
-
+---
+`cn⇥`
 ```tsx
 className={`${${1}}`}
 ```
+---
+`nsc⇥`
+```tsx
+const ${1} = async () => {
+  return (
+    <${2}>,
+	  <p>${1}</p>
+	</${2}>
+  ),
+},
 
-  </td>
-  <td>
-
-```jsx
-className={`${${1}}`}
+export default ${1}
 ```
+---
+`ncc⇥`
+```tsx
+'use client'
 
-  </td>
-</tr>
-</thead>
-<tbody>
+import { FC } from "react"
+
+const ${1}: FC = () => {
+  return (
+    <${2}>
+      <p>${1}</p>
+    </${2}>
+  )
+}
+
+export default ${1}
+```
