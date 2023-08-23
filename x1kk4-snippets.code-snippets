@@ -98,6 +98,13 @@
     "description": "Export type declaration"
   },
 
+  "exportTypeFrom": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "etf",
+    "body": ["export type {${2}} from '${1}'"],
+    "description": "Re-export type construction"
+  },
+
   "generic": {
     "scope": "typescript, typescriptreact",
     "prefix": "<",
