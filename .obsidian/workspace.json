@@ -4,39 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "75258bd22f7eef41",
+        "id": "3c79d17fd2e774b4",
         "type": "tabs",
-        "dimension": 58.80177514792899,
         "children": [
           {
-            "id": "3222b1f479b240d8",
+            "id": "c7a64276de1a6555",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "cca126cfe6c55a0f",
-        "type": "tabs",
-        "dimension": 41.19822485207101,
-        "children": [
-          {
-            "id": "c5ce65da6df0e6e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -89,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 247.5
   },
   "right": {
     "id": "c0ec62789d3d5950",
@@ -105,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           },
           {
@@ -175,6 +147,8 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3222b1f479b240d8",
-  "lastOpenFiles": []
+  "active": "c7a64276de1a6555",
+  "lastOpenFiles": [
+    "README.md"
+  ]
 }
