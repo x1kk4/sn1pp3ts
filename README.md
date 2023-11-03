@@ -1,5 +1,7 @@
 # Just my VScode snippets 
 
+## To see all the information about the project, visit the [Docs](https://sn1pp3ts.x1kk4.online)
+
 ## Installation:
 
 ```bash
@@ -24,22 +26,26 @@ cp x1kk4-snippets.code-snippets ~/Library/Application\ Support/Code/User/snippet
 
 In VSCode: `cmd + shift + P` -> Snippets: Configure User Snippets -> choose x1kk4-snippets.code-snippets
 ## General:
-| **Trigger** |          **Output**           |
-|:-----------:|:-----------------------------:|
-|   `log⇥`    |            console            |
-|   `imp⇥`    |            import             |
-|   `arr⇥`    |          arrow func           |
-|   `efc⇥`    |     export func component     |
-|   `edfc⇥`   | export default func component |
-|  `edtfc⇥`   |    ed typed func component    |
-|    `us⇥`    |           useState            |
-|    `ue⇥`    |           useEffect           |
-|    `t⇥`     |             type              |
-|    `et⇥`    |          export type          |
-|    `<⇥`     |            generic            |
-|    `cn⇥`    |           className           |
-|   `nsc⇥`    |     next server component     |
-|   `ncc⇥`    |     next client component     | 
+| **Trigger** |          **Output**                |
+|:-----------:|:----------------------------------:|
+|   `log⇥`    |              console               |
+|   `imp⇥`    |              import                |
+|   `arr⇥`    |            arrow func              |
+|   `efc⇥`    |       export func component        |
+|   `edfc⇥`   |   export default func component    |
+|  `edtfc⇥`   |      ed typed func component       |
+|    `us⇥`    |             useState               |
+|    `ue⇥`    |             useEffect              |
+|    `t⇥`     |               type                 |
+|    `et⇥`    |            export type             |
+|    `etf⇥`   |            export type             |
+|    `<⇥`     |              generic               |
+|    `cn⇥`    |             className              |
+|    `cns⇥`   |     className template string      |
+|   `nsc⇥`    |       next server component        |
+|   `ncc⇥`    |       next client component        |
+|  `ustyles⇥` | useStyles (jss like styled system) |
+<!-- | `ustyles⇥`  |       useStyles (jss like styled system)           | -->
 
 ## Examples:
 ---
@@ -125,12 +131,22 @@ type ${1} = {${2}}
 export type ${1} = {${2}}
 ```
 ---
+`etf⇥` 
+```tsx
+export type {${2}} from '${1}'
+```
+---
 `<⇥`
 ```tsx
 <${1}>
 ```
 ---
 `cn⇥`
+```tsx
+className={${1}}
+```
+---
+`cns⇥`
 ```tsx
 className={`${${1}}`}
 ```
@@ -164,3 +180,9 @@ const ${1}: FC = () => {
 
 export default ${1}
 ```
+---
+`ustyles⇥`
+```tsx
+const useStyles = create${1}Styles(() => ({${2}}))
+```
+---

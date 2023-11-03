@@ -1,3 +1,5 @@
+.obsidian
+
 /helpers/output
 
 /docusaurus/node_modules
@@ -13,3 +15,5 @@
 /docusaurus/npm-debug.log*
 /docusaurus/yarn-debug.log*
 /docusaurus/yarn-error.log*
+
+/docusaurus/.env

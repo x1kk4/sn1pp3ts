@@ -115,8 +115,15 @@
   "className": {
     "scope": "typescript, typescriptreact, javascript, javascriptreact",
     "prefix": "cn",
-    "body": ["className={`${$1}`}"],
+    "body": ["className={$1}"],
     "description": "className"
+  },
+
+  "classNameString": {
+    "scope": "typescript, typescriptreact, javascript, javascriptreact",
+    "prefix": "cns",
+    "body": ["className={`${$1}`}"],
+    "description": "classNameString"
   },
 
   "nextServerComponent": {
@@ -143,5 +150,11 @@
       "'use client'\n\nimport { FC } from \"react\"\n\nconst ${1}: FC = () => {\n\treturn (\n\t\t<${2}>\n\t\t\t<p>${1}</p>\n\t\t</${2}>\n\t)\n}\n\nexport default ${1}"
     ],
     "description": "Next client component"
+  },
+
+  "useStyles": {
+    "scope": "typescript, typescriptreact, javascript, javascriptreact",
+    "prefix": "ustyles",
+    "body": ["const useStyles = create${1}Styles(() => ({${2}}))"]
   }
 }
